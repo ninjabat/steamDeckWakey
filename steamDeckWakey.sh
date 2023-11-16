@@ -6,9 +6,9 @@
 # set root password if you haven't
 read -p "Do you want to set a new root password? (y/n) " answer
 if [[ $answer =~ ^[Yy]$ ]]; then
-  echo "Skipping setting root password.  Note that you will need one if you haven't set one already!"
-else
   sudo passwd
+else
+  echo "Skipping setting root password.  Note that you will need one if you haven't set one already!"
 fi
 
 # Enable editing the read-only image for Steam OS with this command:
