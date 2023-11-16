@@ -11,7 +11,6 @@ else
   sudo passwd
 fi
 
-
 # Enable editing the read-only image for Steam OS with this command:
 sudo steamos-readonly disable
 
