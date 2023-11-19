@@ -28,12 +28,13 @@ sudo pacman -S dkms cabextract linux-neptune-headers
 
 # Enter this line to download xone into the home directory from github:
 git clone https://github.com/medusalix/xone
+cd xone
 
 # Go into the xone directory by typing cd xone and install xone:
 sudo ./install.sh --release
 
 # Finally get the firmware needed to make the Xbox Controller pair with wireless adapter:
-sudo xone-get-firmware.sh
+ echo -ne '\n' | sudo xone-get-firmware.sh
 
 # re-enable read-only of the image
 sudo steamos-readonly enable
