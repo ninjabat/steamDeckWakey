@@ -38,3 +38,6 @@ sudo ./install.sh --release
 
 # re-enable read-only of the image
 sudo steamos-readonly enable
+
+# finish
+echo "Installation complete!  All done."
