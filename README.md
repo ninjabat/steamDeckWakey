@@ -8,6 +8,5 @@ Start Steamdeck in Desktop mode.  Open a terminal:
 ```
 git clone https://github.com/ninjabat/steamDeckWakey.git
 cd steamDeckWakey
-chmod +x steamDeckWakey
 sudo ./steamDeckWakey
 ```
