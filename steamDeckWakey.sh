@@ -24,14 +24,15 @@ sudo pacman-key --populate archlinux
 sudo pacman -Syu
 
 # Ensure you have all the dependencies required to be able to proceed with the next steps:
-sudo pacman -S dkms cabextract linux-neptune-headers
+sudo pacman -S dkms cabextract linux-headers
 
 # Enter this line to download xone into the home directory from github:
 git clone https://github.com/medusalix/xone
 cd xone
 
 # Go into the xone directory by typing cd xone and install xone:
-sudo ./install.sh --release
+sudo ./install.sh 
+#troubleshoot with journalctl -f
 
 # Finally get the firmware needed to make the Xbox Controller pair with wireless adapter:
  echo -ne '\n' | sudo xone-get-firmware.sh
